@@ -14,12 +14,13 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
     module: {
-        loaders:[{
+        loaders: [{
             test: /.jsx?$/,
             loader: 'babel-loader',
             exclude: /node_module/,
             query: {
-                presets: ['es2015', 'react']
+                presets: ['es2015', 'react'],
+                plugins: ['transform-object-rest-spread']
             }
         }]
     }

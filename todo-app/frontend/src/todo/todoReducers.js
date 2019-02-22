@@ -8,6 +8,8 @@ export default (state = INITIAL_STATE, action) => {
             return {...state, list: action.payload.data }
         case 'TODO_ADDED':
             return {...state, description: ''}
+        case 'DESCRIPTION_CLEANED':
+            return {...state, description: ''}
         default:
             return state
     }

@@ -43,3 +43,7 @@ export const remove = (todo) => {
             .then(res => dispatch(search()))
     }
 }
+
+export const clear = () => ({
+    type: 'DESCRIPTION_CLEANED'
+})
